@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Free brainrots team</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 40px 0;
+            font-size: 36px;
+        }
+
+        .profiles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: rgba(0,0,0,0.4);
+            border-radius: 20px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid white;
+        }
+
+        .card h2 {
+            margin: 15px 0 5px;
+            font-size: 24px;
+        }
+
+        .card h3 {
+            margin: 0 0 15px;
+            font-size: 14px;
+            opacity: 0.8;
+            font-weight: normal;
+        }
+
+        .card p {
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .social a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin: 6px;
+            padding: 10px 18px;
+            border-radius: 25px;
+            background: white;
+            color: #111;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+
+        .social a:hover {
+            transform: scale(1.08);
+        }
+
+        footer {
+            text-align: center;
+            margin: 30px 0;
+            font-size: 12px;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Free Brainrots Team</h1>
+
+    <div class="profiles">
+
+        <!-- PERFIL 1 -->
+        <div class="card">
+            <img src="data:image/jpeg;base64,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 1">
+            <h2>CRITICAS</h2>
+            <h3>@criticass</h3>
+            <p>
+                Creador de contenido y Manager de FREE BRAINROTS
+            </p>
+            <div class="social">
+                <a href="https://discord.com/invite/75WWUbRwNp" target="_blank">
+                    <i class="fab fa-discord"></i> Discord
+                </a>
+                <a href="https://www.tiktok.com/@izangx.fn?is_from_webapp=1&sender_device=pc" target="_blank">
+                    <i class="fab fa-tiktok"></i> TikTok
+                </a>
+            </div>
+        </div>
+
+        <!-- PERFIL 2 -->
+        <div class="card">
+            <img src="https://media.discordapp.net/attachments/1451994133404061910/1467225349707403476/images_2.jpg?ex=69804457&is=697ef2d7&hm=10b259f34ef8d81ea279049653443a77e7278c43f515da14452b43050199c821&=&format=webp" alt="Persona 2">
+            <h2>GIOVANNI</h2>
+            <h3>@mr.spiderman</h3>
+            <p>
+                Server manager
+            </p>
+            <div class="social">
+                <a href="https://discord.com/invite/75WWUbRwNp" target="_blank">
+                    <i class="fab fa-discord"></i> Discord
+                </a>
+                <a href="https://www.tiktok.com/@giovanni_33542" target="_blank">
+                    <i class="fab fa-tiktok"></i> TikTok
+                </a>
+            </div>
+        </div>
+
+        <!-- PERFIL 3 -->
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/c5/cf/72/c5cf7268942703b390ecce6420cd884f.jpg" alt="Persona 3">
+            <h2>Pablo</h2>
+            <h3>@phablix</h3>
+            <p>
+                Streamer y Manager de FREE BRAINROTS
+            </p>
+            <div class="social">
+                <a href="https://discord.com/invite/75WWUbRwNp" target="_blank">
+                    <i class="fab fa-discord"></i> Discord
+                </a>
+                <a href="https://www.tiktok.com/@phablix02" target="_blank">
+                    <i class="fab fa-tiktok"></i> TikTok
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 · FREE BRAINROTS TEAM
+    </footer>
+
+</body>
+</html>
